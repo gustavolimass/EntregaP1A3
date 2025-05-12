@@ -1,0 +1,130 @@
+/* assets/css/login.css */
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa; /* Um cinza claro para o fundo da página */
+    font-family: 'Arial', sans-serif; /* Exemplo de fonte, ajuste conforme o design */
+}
+
+.login-container {
+    display: flex;
+    max-width: 900px; /* Largura máxima do container */
+    width: 100%;
+    background-color: #ffffff; /* Fundo branco para o card */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden; /* Para os cantos arredondados funcionarem bem */
+}
+
+.login-form-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-logo-section {
+    flex: 1;
+    background-color: #fff; /* Ou a cor de fundo atrás do logo no design */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    /* border-left: 1px solid #eee; Opcional: uma linha divisória */
+}
+
+.logo-unifood {
+    max-width: 350px; /* Ajuste o tamanho do logo conforme necessário */
+    margin-bottom: 20px;
+}
+
+.app-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333; /* Ajuste a cor do nome do app se estiver usando */
+}
+
+.login-form-section h2 {
+    color: #333;
+    font-weight: 600;
+    font-size: 1.5rem; /* Ajustado para corresponder ao "Entre com seu email e senha" */
+}
+
+.form-control-lg {
+    border-radius: 10px; /* Bordas arredondadas nos inputs */
+    background-color: #f0f0f0; /* Fundo cinza claro para inputs */
+    border: none; /* Remove borda padrão */
+    padding: 0.75rem 1.25rem; /* Ajusta padding interno */
+}
+
+.form-control-lg::placeholder {
+    color: #aaa;
+}
+
+
+/* Botão de Login (Roxo) */
+.btn-login-custom {
+    background-color: #14d3a8; /* Tom de roxo - ajuste para o tom exato do design */
+    border: none;
+    color: white;
+    padding: 10px 0;
+    font-size: 1.1rem;
+    border-radius: 10px;
+}
+
+.btn-login-custom:hover {
+    background-color: #0b7d62; /* Roxo mais escuro no hover */
+    color: white;
+}
+
+/* Botão de Registro (Laranja) */
+.btn-signup-custom {
+    background-color: #14d3a8; /* Tom de laranja - ajuste para o tom exato do design */
+    border: none;
+    color: white;
+    padding: 10px 0;
+    font-size: 1.1rem;
+    border-radius: 10px;
+}
+
+.btn-signup-custom:hover {
+    background-color: #0b7d62; /* Laranja mais escuro no hover */
+    color: white;
+}
+
+.link-create-account,
+.link-login {
+    color: #14d3a8; /* Laranja para o link "Criar" */
+    text-decoration: none;
+    font-weight: bold;
+}
+.link-login {
+    color: #14d3a8; /* Laranja para o link "Conecte-se" */
+}
+
+.link-create-account:hover,
+.link-login:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+    }
+    .login-logo-section {
+        /* Poderia ser escondido em telas muito pequenas ou ter tamanho reduzido */
+        padding: 20px;
+        order: -1; /* Coloca o logo em cima no mobile */
+    }
+    .logo-unifood {
+        max-width: 100px;
+    }
+    .login-form-section {
+        padding: 30px;
+    }
+}

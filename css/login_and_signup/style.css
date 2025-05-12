@@ -1,0 +1,40 @@
+/* assets/css/style.css */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Defina uma fonte base */
+    color: #333;
+}
+
+/* Estilos para a barra de navegação principal (a ser desenvolvida) */
+.main-navbar {
+    background-color: #300449; /* Cor roxa escura da barra de navegação */
+    padding: 0.75rem 1rem;
+}
+
+.main-navbar .navbar-brand {
+    color: #fff;
+    font-weight: bold;
+}
+
+.main-navbar .nav-link {
+    color: #f0f0f0; /* Cor dos links na barra */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.main-navbar .nav-link:hover,
+.main-navbar .nav-link.active {
+    color: #fff;
+    font-weight: 500;
+}
+
+.main-navbar .navbar-brand b { /* Para "Olá, Fulano" */
+    font-weight: normal;
+}
+
+/* Estilos para o corpo principal do conteúdo das páginas */
+.page-container {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+/* Mais estilos globais podem ser adicionados aqui */

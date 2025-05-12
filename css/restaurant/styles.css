@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "poppins", sans-serif;
+}
+.header {
+  background-color: #1e1e1e;
+  height: 10vh;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10vh;
+  padding-left: 10vh;
+  font-size: 2.5vh;
+  font-weight: bold;
+}
+.header a {
+  text-decoration: none;
+  color: white;
+}
+.header p {
+  color: white;
+}
+h1 {
+  color: black;
+  font-family: "poppins", sans-serif;
+  font-size: 4.5vh;
+}
+main {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5vh;
+}
+.card {
+  background-color: #b6b6b6;
+  width: 24vh;
+  height: 24vh;
+  padding: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5vh;
+}
+.card-image {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+}
+.card-image img {
+  height: 100%;
+  text-align: center;
+}
+.card-info {
+  height: 30%;
+  width: 100%;
+  font-size: 1.9vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.options-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+  justify-content: space-between;
+}
+.break {
+  display: none;
+}
+#welcome2 {
+  display: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .break {
+    display: block;
+    flex-basis: 100%;
+  }
+  .header {
+    height: 10vh;
+    flex-wrap: wrap;
+    padding: 2vw 10vw 2vw 10vw;
+    font-size: 5.2vw;
+    font-weight: normal;
+  }
+  #welcome {
+    display: none;
+  }
+  #welcome2 {
+    display: block;
+    font-size: 6vw;
+    font-weight: 600;
+  }
+  h1 {
+    font-size: 7vw;
+  }
+  h2 {
+    font-size: 5vw;
+    text-align: center;
+  }
+  main {
+    padding:4vh 4vw 0vw 4vw;
+    gap: 2vh;
+  }
+  .card {
+    background-color: transparent;
+    padding: 0;
+    justify-content: center;
+  }
+  .card-image {
+    height: 70%;
+  }
+  .card-info {
+    height: 20%;
+  }
+  .options-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .options-list .card:last-child {
+  margin-bottom: 5vh;
+}
+}

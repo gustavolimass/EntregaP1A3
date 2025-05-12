@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/general/reset.css" />
+    <link rel="stylesheet" href="../css/home/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Página Principal</title>
+  </head>
+  <body>
+    <div class="header">
+      <p id="welcome">Olá, Fulano</p>
+      <a href="home.html">Home</a>
+      <a href="#">Consultar Pedidos</a>
+      <div class="break"></div>
+      <a href="profile.html">Perfil</a>
+      <a href="#">Carrinho</a>
+      <a href="../index.html">Sair</a>
+    </div>
+    <main>
+      <p id="welcome2">Bem-vindo, Fulano</p>
+      <div class="search">
+        <i class="fas fa-search magnifier"></i>
+        <input type="text" placeholder="Buscar restaurantes perto de você" />
+      </div>
+      <h1>Restaurantes recomendados perto de você</h1>
+      <div class="best-restaurants">
+        <div class="restaurant">
+          <a href="#">
+            <img src="../assets/restaurants-logos/santo_grill.png" alt="Santo Grill" />
+          </a>
+          <p class="restaurant-name">Santo Grill</p>
+          <p class="restaurant-rate">Nota: 4,5</p>
+        </div>
+        <div class="restaurant">
+          <a href="restaurant.html">
+            <img src="../assets/restaurants-logos/burger_king.png" alt="Burger King" />
+          </a>
+          <p class="restaurant-name">Burger King</p>
+          <p class="restaurant-rate">Nota: 3,8</p>
+        </div>
+        <div class="restaurant">
+          <a href="#">
+            <img
+              src="../assets/restaurants-logos/churrasco_do_gil.png"
+              alt="Churrasco do Gil"
+            />
+          </a>
+          <p class="restaurant-name">Churrasco do Gil</p>
+          <p class="restaurant-rate">Nota: 4,0</p>
+        </div>
+        <div class="restaurant" id="last-item">
+          <a href="#">
+            <img src="../assets/restaurants-logos/giraffas.png" alt="Giraffas" />
+          </a>
+          <p class="restaurant-name">Giraffas</p>
+          <p class="restaurant-rate">Nota: 4,6</p>
+        </div>
+      </div>
+      <div class="false-div"></div>
+    </main>
+  </body>
+</html>
