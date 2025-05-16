@@ -1,10 +1,31 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import TelaInicial from "./pages/TelaInicial/TelaInicial.jsx";
+import LoginCliente from "./pages/LoginCliente/LoginCliente.jsx";
+import LoginRestaurante from "./pages/LoginRestaurante/LoginRestaurante.jsx";
 
-createRoot(document.getElementById('root')).render(
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <TelaInicial/>,
+  },
+  {
+    path: "/cliente/login",
+    element: <LoginCliente/>,
+  },
+  {
+    path: "/restaurante/login",
+    element: <LoginRestaurante/>,
+  },
+]);
+
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App />
-  </StrictMode>,
-)
+    <RouterProvider router={router} />
+  </StrictMode>
+);
