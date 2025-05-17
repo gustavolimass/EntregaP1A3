@@ -1,6 +1,6 @@
-import "./TelaInicial.css";
+import styles from "./TelaInicial.module.css";
 import { useNavigate } from "react-router-dom";
-function App() {
+function TelaInicial() {
   const navigate = useNavigate();
   function irParaLoginDeCliente() {
     navigate("/cliente/login");
@@ -10,11 +10,11 @@ function App() {
   }
   return (
     <>
-      <h1>Página inicial</h1>
-      <p onClick={irParaLoginDeCliente}>Sou cliente</p>
-      <p onClick={irParaLoginDeRestaurante}>Sou restaurante</p>
+      <h1 className={styles.titulo}>Tela Inicial do Site</h1>
+      <button onClick={irParaLoginDeCliente}>Sou cliente</button>
+      <button onClick={irParaLoginDeRestaurante}>Sou restaurante</button>
     </>
   );
 }
 
-export default App;
+export default TelaInicial;
