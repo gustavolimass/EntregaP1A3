@@ -11,12 +11,16 @@ function LoginRestaurante() {
   function voltar() {
     navigate("/");
   }
+  function criarProduto(){
+    navigate("/restaurante/criarproduto")
+  }
   return (
     <>
       <h1 className={styles.titulo}>Página de Login do Usuário Restaurante</h1>
       <button onClick={entrar}>Entrar</button>
       <button onClick={irParaCadastro}>Criar conta</button>
-      <button onClick={voltar}>Voltar</button>
+      <button onClick={voltar}>Voltar</button> 
+      <button onClick={criarProduto}>Criar Produto</button> 
 
     </>
   );
