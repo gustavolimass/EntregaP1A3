@@ -1,19 +1,34 @@
 import styles from "./TelaInicial.module.css";
 import { useNavigate } from "react-router-dom";
+
 function TelaInicial() {
   const navigate = useNavigate();
+
   function irParaLoginDeCliente() {
     navigate("/cliente/login");
   }
+
   function irParaLoginDeRestaurante() {
     navigate("/restaurante/login");
   }
+
   return (
-    <>
-      <h1 className={styles.titulo}>Tela Inicial do Site</h1>
-      <button onClick={irParaLoginDeCliente}>Sou cliente</button>
-      <button onClick={irParaLoginDeRestaurante}>Sou restaurante</button>
-    </>
+    <div className={styles.container}>
+      <div className={styles.logoContainer}>
+        <img
+          src="src/assets/unifood1.png"s
+          alt=""
+          className={styles.logo}
+        />
+      </div>
+      <h1 className={styles.titulo}>Bem-vindo ao UniFood!</h1>
+      <button onClick={irParaLoginDeCliente} className={styles.botao}>
+        Sou cliente
+      </button>
+      <button onClick={irParaLoginDeRestaurante} className={styles.botao}>
+        Sou restaurante
+      </button>
+    </div>
   );
 }
 
