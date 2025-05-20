@@ -23,10 +23,10 @@ function TelaInicial() {
       </div>
       <h1 className={styles.titulo}>Bem-vindo ao UniFood!</h1>
       <button onClick={irParaLoginDeCliente} className={styles.botao}>
-        Sou cliente
+        Sou Cliente
       </button>
       <button onClick={irParaLoginDeRestaurante} className={styles.botao}>
-        Sou restaurante
+        Sou Restaurante
       </button>
     </div>
   );

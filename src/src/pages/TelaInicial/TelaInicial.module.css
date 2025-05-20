@@ -13,25 +13,26 @@
 }
 
 .logo {
-  width: 250px;
-  height: auto;
+  width: 40vh;
+  height: 35vh;
+  margin-top: -200px;
 }
 
 .titulo {
-  font-size: 24px;
+  font-size: 5vh;
   font-weight: 500;
   margin-bottom: 30px;
 }
 
 .botao {
-  width: 200px;
-  padding: 10px 20px;
+  width: 50vh;
+  padding: 15px 15px;
   margin: 10px 0;
   background-color: #1ed2b6;
   color: white;
   border: none;
   border-radius: 25px;
-  font-size: 14px;
+  font-size: 3vh;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
