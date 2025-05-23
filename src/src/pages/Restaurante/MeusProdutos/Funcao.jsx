@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Pencil } from "lucide-react";
-import styles from 'D:/programação/projetoA32/EntregaP1A3/src/src/pages/Restaurante/MeusProdutos/MeusProdutos.module.css';
+import styles from "./MeusProdutos.module.css";
 
 const Funcao = () => {
   const [imagemUrl, setImagemUrl] = useState("");
