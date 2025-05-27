@@ -49,21 +49,21 @@ const Funcao = () => {
         {/* Coluna da descrição */}
         <div className={styles.colunaTexto}>
           <div className={styles.itemTexto}>
+            <Pencil size={14} className={styles.editar} onClick={() => editarCampo(nome, setNome, "nome")} />
             <strong>Nome:</strong>
             <span>{nome || ""}</span>
-            <Pencil size={14} className={styles.editar} onClick={() => editarCampo(nome, setNome, "nome")} />
           </div>
 
           <div className={styles.itemTexto}>
+            <Pencil size={14} className={styles.editar} onClick={() => editarCampo(descricao, setDescricao, "descrição")} />
             <strong>Descrição:</strong>
             <span>{descricao || ""}</span>
-            <Pencil size={14} className={styles.editar} onClick={() => editarCampo(descricao, setDescricao, "descrição")} />
           </div>
 
           <div className={styles.itemTexto}>
+            <Pencil size={14} className={styles.editar} onClick={() => editarCampo(preco, setPreco, "preço")} />
             <strong>Preço:</strong>
             <span>{preco || ""}</span>
-            <Pencil size={14} className={styles.editar} onClick={() => editarCampo(preco, setPreco, "preço")} />
           </div>
         </div>
       </div>
