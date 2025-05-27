@@ -1,4 +1,102 @@
-.titulo{
-    font-size:5vh;
-    text-align: center;
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  font-family: 'Arial', sans-serif;
 }
+
+.formulario {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  margin-right: 60px;
+}
+
+.formulario h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  padding: 12px;
+  margin-bottom: 12px;
+  border: none;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.erro {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.botao {
+  background-color: #00d98b;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.botao:hover {
+  background-color: #00c07a;
+}
+
+.divisor {
+  margin: 40px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+.linkCadastro {
+  font-size: 14px;
+  text-align: center;
+}
+
+.criar {
+  color: #00d98b;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.logoContainer {
+ background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  margin-right: 60px;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.unifood {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.subtitulo {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
