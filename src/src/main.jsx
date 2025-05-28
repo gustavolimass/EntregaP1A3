@@ -18,7 +18,7 @@ import Carrinho from "./pages/Cliente/Carrinho/Carrinho.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/telainicial",
     element: <TelaInicial />,
   },
   {
