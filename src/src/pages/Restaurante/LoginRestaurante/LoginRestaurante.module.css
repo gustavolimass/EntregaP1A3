@@ -1,10 +1,11 @@
 .container {
   display: flex;
-  height: 100vh;
+  height: 101vh;
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
   font-family: 'Arial', sans-serif;
+  
 }
 
 .formulario {
