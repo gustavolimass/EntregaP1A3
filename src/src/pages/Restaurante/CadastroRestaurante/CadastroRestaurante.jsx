@@ -74,7 +74,7 @@ function CadastroRestaurante() {
 
         <p className={styles.linkCadastro}>
           
-          Não possui uma conta?{' '}
+          Já possui uma conta?{' '}
 
           <span className={styles.criar} onClick={irParaLogin}>
             Login
